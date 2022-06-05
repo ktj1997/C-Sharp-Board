@@ -8,7 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- 
+      Swagger
+    -->
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <!-- 
+      Logging Library
+    -->
+    <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
+    <!-- 
+      Log를 다양한 형태로 Formatting 해준다. (Json, XML ...)
+    -->
+    <PackageReference Include="Serilog.Expressions" Version="3.3.0" />
+    <!-- 
+      Logging Library (Serilog)를 다양한 저장소에 저장 가능하게 Sync해준다.
+    -->
+    <PackageReference Include="Serilog.Sinks.Seq" Version="5.1.1" />
   </ItemGroup>
 
 </Project>
