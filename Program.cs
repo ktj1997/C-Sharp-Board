@@ -1,4 +1,6 @@
 using Serilog;
+using board.config;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +22,11 @@ builder.Services.AddCors(options =>
     policy => policy.AllowAnyHeader()
     .AllowAnyOrigin()
     .AllowAnyMethod());
+});
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultDbConnectionString");
+builder.Services.AddDbContext<DefaultDbContext>(options =>{
+    options.UseSqlServer(connectionString);
 });
 
 /**

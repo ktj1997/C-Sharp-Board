@@ -9,6 +9,10 @@
 
   <ItemGroup>
     <!-- 
+      ORM
+    -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
+    <!-- 
       Swagger
     -->
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />

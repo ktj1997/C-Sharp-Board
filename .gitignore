@@ -4,8 +4,6 @@ project.lock.json
 .DS_Store
 *.pyc
 nupkg/
-obj/
-logs/
 
 # Visual Studio Code
 .vscode
@@ -33,6 +31,9 @@ bld/
 [Oo]ut/
 msbuild.log
 msbuild.err
+
+obj
+logs/
 msbuild.wrn
 
 # Visual Studio 2015
