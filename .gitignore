@@ -32,8 +32,9 @@ bld/
 msbuild.log
 msbuild.err
 
-obj
+obj/
 logs/
+Migrations/
 msbuild.wrn
 
 # Visual Studio 2015

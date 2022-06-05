@@ -1,33 +1,37 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>C_Sharp_Board</RootNamespace>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <!-- 
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>C_Sharp_Board</RootNamespace>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- 
       ORM
     -->
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
-    <!-- 
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5"/>
+		<!--
+      DB Utility Tool
+    -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<!-- 
       Swagger
     -->
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <!-- 
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1"/>
+		<!-- 
       Logging Library
     -->
-    <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
-    <!-- 
+		<PackageReference Include="Serilog.AspNetCore" Version="5.0.0"/>
+		<!-- 
       Log를 다양한 형태로 Formatting 해준다. (Json, XML ...)
     -->
-    <PackageReference Include="Serilog.Expressions" Version="3.3.0" />
-    <!-- 
+		<PackageReference Include="Serilog.Expressions" Version="3.4.0"/>
+		<!-- 
       Logging Library (Serilog)를 다양한 저장소에 저장 가능하게 Sync해준다.
     -->
-    <PackageReference Include="Serilog.Sinks.Seq" Version="5.1.1" />
-  </ItemGroup>
-
+		<PackageReference Include="Serilog.Sinks.Seq" Version="5.1.1"/>
+	</ItemGroup>
 </Project>

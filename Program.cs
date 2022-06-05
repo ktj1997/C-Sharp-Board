@@ -1,6 +1,6 @@
-using Serilog;
-using board.config;
+using C_Sharp_Board.Config;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +25,8 @@ builder.Services.AddCors(options =>
 });
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultDbConnectionString");
-builder.Services.AddDbContext<DefaultDbContext>(options =>{
+builder.Services.AddDbContext<DefaultDbContext>(options =>
+{
     options.UseSqlServer(connectionString);
 });
 
@@ -46,8 +47,8 @@ if (app.Environment.IsDevelopment())
 }
 
 /**
-    * 실제 작동하는 App에서 설정들을 적용한다.
-    */
+	* 실제 작동하는 App에서 설정들을 적용한다.
+	*/
 
 app.UseCors("AllowAll");
 
