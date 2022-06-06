@@ -6,10 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 /**
-	* Builder는 App을 실행하기 위해서 필요한
-	* 모든 설정들을 관리한다.
-	* IOC Container 역할을 한다.
-	*/
+  * Builder는 App을 실행하기 위해서 필요한
+  * 모든 설정들을 관리한다.
+  * IOC Container 역할을 한다.
+  * IOC Container에 DI 하는 것이다.
+  */
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -42,6 +43,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     app.UseSwagger();
     app.UseSwaggerUI();
 }

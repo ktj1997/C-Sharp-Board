@@ -2,9 +2,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace C_Sharp_Board.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+[ApiController] // REST API Controller를 의미하는 설정
+[Route("api/v1/")]
+public class WeatherForecastController : ControllerBase 
+    /**
+      * ControllerBase --> REST API 
+      * Controller -> MVC Controller
+      */
 {
     private static readonly string[] Summaries = new[]
     {
@@ -21,7 +25,7 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
+    [HttpGet("weathers")] 
     public IEnumerable<WeatherForecast> Get()
     {
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
