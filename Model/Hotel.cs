@@ -1,8 +1,7 @@
 using System.ComponentModel.DataAnnotations;
-
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace C_Sharp_Board.Model
+namespace Board.Model
 {
     public class Hotel
     {

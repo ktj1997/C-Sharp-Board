@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace C_Sharp_Board.Model
+namespace Board.Model
 {
     public class Country
     {
