@@ -9,7 +9,7 @@
 		<!-- 
       ORM
     -->
-		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
 		<!--
       DB Utility Tool
     -->
@@ -17,21 +17,25 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
+		<!--
+			의존성 관리
+		-->
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 		<!-- 
       Swagger
     -->
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1"/>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
 		<!-- 
       Logging Library
     -->
-		<PackageReference Include="Serilog.AspNetCore" Version="5.0.0"/>
+		<PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
 		<!-- 
       Log를 다양한 형태로 Formatting 해준다. (Json, XML ...)
     -->
-		<PackageReference Include="Serilog.Expressions" Version="3.4.0"/>
+		<PackageReference Include="Serilog.Expressions" Version="3.4.0" />
 		<!-- 
       Logging Library (Serilog)를 다양한 저장소에 저장 가능하게 Sync해준다.
     -->
-		<PackageReference Include="Serilog.Sinks.Seq" Version="5.1.1"/>
+		<PackageReference Include="Serilog.Sinks.Seq" Version="5.1.1" />
 	</ItemGroup>
 </Project>

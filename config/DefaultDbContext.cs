@@ -1,4 +1,4 @@
-using Board.Model;
+using C_Sharp_Board.Model;
 using Microsoft.EntityFrameworkCore;
 
 namespace Board.Config
