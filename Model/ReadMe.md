@@ -1,18 +1,40 @@
-# DB °ü·Ã
-## EntityFrameWork »ç¿ë
+# DB ï¿½ï¿½ï¿½ï¿½
 
-### Model »ı¼º
+## EntityFrameWork ï¿½ï¿½ï¿½
 
-#### 1. Code First ¹æ½Ä
-1-1. FluentAPI 
-	- ÇÏ³ªÀÇ ¼³Á¤ÆÄÀÏ¿¡¼­ Entity ¹× DB¼³Á¤ÀÌ °¡´ÉÇÏ´Ù.
-	- Ã¼ÀÌ´×À» ÅëÇÑ ¹®Á¦ÇØ°á
+### Model ï¿½ï¿½ï¿½ï¿½
 
-1-2. Data Annotations
-	- ¶Ù¾î³­ °¡µ¶¼ºÀ» °®´Â´Ù.
-	- ¿¡³ëÅ×ÀÌ¼ÇÀ» º¸°í ¾Ë¾Æ¼­ »ı¼ºÇØÁØ´Ù.
+#### 1. Code First ï¿½ï¿½ï¿½
 
-#### 2. EF Designer ¹æ½Ä
+1-1. FluentAPI - ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ Entity ï¿½ï¿½ DBï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½. - Ã¼ï¿½Ì´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø°ï¿½
+
+1-2. Data Annotations - ï¿½Ù¾î³­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â´ï¿½. - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ë¾Æ¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½.
+
+#### 2. EF Designer ï¿½ï¿½ï¿½
+
 1-1. ModelFirst
 
 1-2. DataBaseFirst
+
+### Migration
+
+- Migrationì€ DBì˜ Entityì™€ Codeìƒì˜ Modelì„ ë™ê¸°í™” í•˜ëŠ” ê²ƒì´ë‹¤.
+- Migrationì„ í•œë‹¤ê³  DBì— ë°˜ì˜ë˜ëŠ” ê²ƒì€ ì•„ë‹ˆë‹¤.
+- csíŒŒì¼ì´ ìƒê¸´ë‹¤.
+-
+
+### 0. Migration DBì— ë°˜ì˜
+
+- .NET CLI
+
+```
+dotnet ef database update
+```
+
+#### 1. Add Migration
+
+- .NET CLI
+
+```shell
+dotnet ef migrations add InitialCreate --context CodeFirstDbContext
+```

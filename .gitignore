@@ -34,7 +34,6 @@ msbuild.err
 
 obj/
 logs/
-Migrations/
 msbuild.wrn
 
 # Visual Studio 2015
