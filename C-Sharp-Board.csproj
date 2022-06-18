@@ -7,8 +7,9 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- 
-      ORM
+      DAO
     -->
+		<PackageReference Include="ADO.Net.Client" Version="1.4.3" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
 		<!--
       DB Utility Tool
@@ -37,5 +38,9 @@
       Logging Library (Serilog)를 다양한 저장소에 저장 가능하게 Sync해준다.
     -->
 		<PackageReference Include="Serilog.Sinks.Seq" Version="5.1.1" />
+	</ItemGroup>
+	<ItemGroup>
+	    <Folder Include="Model\DbFirst" />
+		<Folder Include="Model\CodeFirst" />	
 	</ItemGroup>
 </Project>

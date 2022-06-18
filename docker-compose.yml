@@ -29,9 +29,9 @@ services:
     networks:
         - boards
   sql_server:
-     image: mcr.microsoft.com/mssql/server
+     image: mcr.microsoft.com/azure-sql-edge
      ports:
-       - "1433:1433"
+       - "14330:14330"
      environment:
         ACCEPT_EULA: Y
         SA_PASSWORD: 1q2w3e4r!!

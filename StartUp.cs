@@ -1,6 +1,6 @@
-using Board.Controller;
 using Board.Service;
 using C_Sharp_Board.Config;
+using C_Sharp_Board.Controller;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
   */
 class StartUp
 {
-    public IConfiguration _configuration { get; }
+    private IConfiguration _configuration { get; }
 
     public StartUp(IConfiguration configuration)
     {

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Board.Service;
 
-namespace Board.Controller
+namespace C_Sharp_Board.Controller
 {
     
     [ApiController]
@@ -29,7 +29,7 @@ namespace Board.Controller
 
         [HttpPost("sign-up")]
         public IActionResult signUp(){
-            int userId = 1;
+            var userId = 1;
             return Created(new Uri($"/users/{userId}"),null);
         }
 
